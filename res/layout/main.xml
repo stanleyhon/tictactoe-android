@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
     <Button
             androidLid="@+id/playButton"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="@string/play" />
+            android:text="@string/play"
+            android:onClick="goMenu"/>
 
     <ImageView
             android:src="@drawable/splash"
-            android:layout_width="300"
-            android:layout_height="350"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/playButton"
             android:layout_alignParentBottom="true"
-             />
+            />
 </RelativeLayout>
 
