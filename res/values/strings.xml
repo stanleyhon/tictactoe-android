@@ -6,4 +6,5 @@
     <string name="playHotseat">PLAY HOTSEAT</string>
     <string name="quit">QUIT</string>
     <string name="goAbout">ABOUT</string>
+    <string name="aboutText">TicTacToe for Android is made by <b>Flying|Pan</b>, a small team devoted to blah blah blah stuff.\n\nWe are on the web at http://blah.blah.com. </string>
 </resources>

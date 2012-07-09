@@ -14,5 +14,6 @@
             </intent-filter>
         </activity>
         <activity android:name="Menu"/>
+        <activity android:name="About"/>
     </application>
 </manifest> 
