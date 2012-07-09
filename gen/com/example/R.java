@@ -30,10 +30,10 @@ containing a value of this type.
         public static final int splash=0x7f020000;
     }
     public static final class id {
-        public static final int about=0x7f05000c;
-        public static final int playAI=0x7f05000b;
-        public static final int playButton=0x7f05000a;
-        public static final int playHotseat=0x7f05000d;
+        public static final int about=0x7f05000b;
+        public static final int playAI=0x7f05000a;
+        public static final int playButton=0x7f050009;
+        public static final int playHotseat=0x7f05000c;
         public static final int x0y0=0x7f050006;
         public static final int x0y1=0x7f050003;
         public static final int x0y2=0x7f050000;
@@ -43,7 +43,6 @@ containing a value of this type.
         public static final int x2y0=0x7f050008;
         public static final int x2y1=0x7f050005;
         public static final int x2y2=0x7f050002;
-        public static final int x3y0=0x7f050009;
     }
     public static final class layout {
         public static final int about=0x7f030000;

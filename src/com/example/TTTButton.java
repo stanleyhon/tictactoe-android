@@ -12,11 +12,18 @@ import android.widget.Button;
  * To change this template use File | Settings | File Templates.
  */
 public class TTTButton extends Button {
-   private int x;
-   private int y;
+   private int x = 0;
+   private int y = 0;
 
-   public TTTButton(Context context, AttributeSet attrs, int defStyle) {
-      super(context, attrs, defStyle);
+   public TTTButton(Context context) {
+      super(context);
+   }
+
+   public TTTButton(Context context, AttributeSet attrs) {
+      super(context, attrs);
+      this.setX(attrs.getAttributeIntValue("http://schemas.android.com/apk/res-auto", "xValue", -1));
+      this.setY(attrs.getAttributeIntValue("http://schemas.android.com/apk/res-auto", "yValue", -1));
+
    }
 
    public int getX () {
