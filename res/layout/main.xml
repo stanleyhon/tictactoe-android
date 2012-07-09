@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/splash"
     >
     <Button
-
-            android:layout_height="100dp"
-            android:layout_width="100dp"
-            android:layout_gravity="center_horizontal"
+            androidLid="@+id/playButton"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
             android:text="@string/play" />
 
-
-</LinearLayout>
+    <ImageView
+            android:src="@drawable/splash"
+            android:layout_width="300"
+            android:layout_height="350"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/playButton"
+            android:layout_alignParentBottom="true"
+             />
+</RelativeLayout>
 
