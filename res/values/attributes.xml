@@ -1,0 +1,4 @@
+<resources>
+   <attr name="xValue" format="integer"/>
+   <attr name="yValue" format="integer"/>
+</resources>

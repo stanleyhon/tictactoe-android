@@ -19,7 +19,4 @@ public class Hotseat extends Activity {
       setContentView(R.layout.hotseat);
    }
 
-   public void x0y2 () {
-      R.layout.
-   }
 }

@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res/com.example.TTTButton"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
 
-   <Button
+
+   <com.example.TTTButton
       android:id="@+id/x0y2"
       android:layout_height="75dip"
       android:layout_width="75dip"
       android:clickable="false"
       android:textSize="55dip"
       android:text="-"
-      android:onClick="x0y2"/>
+      app:xValue="5"
+      />
 
    <Button
          android:id="@+id/x1y2"
