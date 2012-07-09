@@ -4,6 +4,6 @@
     <string name="edit_message">Enter a message bro</string>
     <string name="play">PLAY</string>
     <string name="playHotseat">PLAY HOTSEAT</string>
-    <string name="quit">QUIT</string>
     <string name="goAbout">ABOUT</string>
+    <string name="playAI">PLAY AI [under construction]</string>
 </resources>

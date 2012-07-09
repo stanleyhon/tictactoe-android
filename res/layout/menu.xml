@@ -6,11 +6,20 @@
         >
 
    <Button
+         android:id="@+id/playAI"
+         android:layout_centerInParent="true"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:text="@string/playAI"
+         android:clickable="false"
+         android:onClick="goHotseat"/>
+
+   <Button
        android:id="@+id/about"
        android:layout_height="wrap_content"
        android:layout_width="match_parent"
        android:text="@string/goAbout"
-       android:layout_centerInParent="true"
+       android:layout_below="@id/playAI"
        android:onClick="goAbout"/>
 
    <Button
@@ -18,16 +27,10 @@
        android:layout_height="wrap_content"
        android:layout_width="match_parent"
        android:text="@string/playHotseat"
-       android:layout_above="@id/about"
+       android:layout_above="@id/playAI"
        android:onClick="goHotseat"/>
 
-   <Button
-       android:id="@+id/quit"
-       android:layout_height="wrap_content"
-       android:layout_width="match_parent"
-       android:text="@string/quit"
-       android:onClick="goQuit"
-       android:layout_below="@id/about"/>
+
 
 </RelativeLayout>
 
