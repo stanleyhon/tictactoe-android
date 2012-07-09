@@ -9,9 +9,7 @@
       android:layout_height="75dip"
       android:layout_width="75dip"
       android:clickable="false"
-      android:layout_alignLeft="true"
-      android:layout_alignTop="true"
-      android:textSize="55"
+      android:textSize="55dip"
       android:text="-" />
 
 </RelativeLayout>
