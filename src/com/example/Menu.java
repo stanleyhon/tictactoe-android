@@ -1,9 +1,7 @@
 package com.example;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 /**
  * Created with IntelliJ IDEA.
@@ -25,4 +23,10 @@ public class Menu extends Activity {
       Intent intent = new Intent(this, Hotseat.class);
       startActivity(intent);
    }
+
+    public void goAbout (View view) {
+        Intent intent = new Intent(this, About.class);
+        startActivity(intent);
+    }
+
 }
