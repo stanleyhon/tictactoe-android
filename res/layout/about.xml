@@ -9,6 +9,7 @@
             android:layout_height="fill_parent"
             android:singleLine="false"
             android:textSize="20dip"
+            android:autoLink="all"
             android:text="@string/aboutText" />
 
 </LinearLayout>
