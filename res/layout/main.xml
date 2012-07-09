@@ -5,7 +5,7 @@
                 android:layout_height="fill_parent"
         >
     <Button
-            androidLid="@+id/playButton"
+            android:id="@+id/playButton"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="@string/play"

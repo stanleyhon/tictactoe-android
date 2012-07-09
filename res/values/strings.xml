@@ -3,4 +3,7 @@
     <string name="app_name">tictactoe-android</string>
     <string name="edit_message">Enter a message bro</string>
     <string name="play">PLAY</string>
+    <string name="playHotseat">PLAY HOTSEAT</string>
+    <string name="quit">QUIT</string>
+    <string name="goAbout">ABOUT</string>
 </resources>

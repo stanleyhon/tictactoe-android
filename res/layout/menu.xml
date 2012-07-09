@@ -5,5 +5,29 @@
                 android:layout_height="fill_parent"
         >
 
+   <Button
+       android:id="@+id/about"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:text="@string/goAbout"
+       android:layout_centerInParent="true"
+       android:onClick="goAbout"/>
+
+   <Button
+       android:id="@+id/playHotseat"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:text="@string/playHotseat"
+       android:layout_above="@id/about"
+       android:onClick="goHotseat"/>
+
+   <Button
+       android:id="@+id/quit"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:text="@string/quit"
+       android:onClick="goQuit"
+       android:layout_below="@id/about"/>
+
 </RelativeLayout>
 
