@@ -1,4 +1,6 @@
 <resources>
-   <attr name="xValue" format="integer"/>
-   <attr name="yValue" format="integer"/>
+    <declare-styleable name="TTTButton">
+        <attr name="app:xValue" format="integer" />
+        <attr name="app:yValue" format="integer" />
+    </declare-styleable>
 </resources>
