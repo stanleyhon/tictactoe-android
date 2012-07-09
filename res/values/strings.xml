@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">tictactoe-android</string>
+    <string name="edit_message">Enter a message bro</string>
+    <string name="play">PLAY</string>
 </resources>
