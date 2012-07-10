@@ -1,9 +1,11 @@
 package com.example;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+
+import game.core.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,20 +16,52 @@ import android.view.View;
  */
 public class Hotseat extends Activity {
 
+   private Board b = new Board();
+   private int currentPlayer = Board.CROSS;
+   private boolean gameOver = false;
+
    @Override
    public void onCreate (Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.hotseat);
+
+
    }
 
    public void buttonPressed(View view) {
-       TTTButton b = (TTTButton) view;
-       AlertDialog dialog = new AlertDialog.Builder(view.getContext())
-               .setMessage("("+b.getX()+","+b.getY()+")")
-               .setTitle("Pressed!")
-               .setCancelable(true)
-               .create();
-       dialog.show();
+      TTTButton pressedButton = (TTTButton) view;
+      int xTarget = pressedButton.getX();
+      int yTarget = pressedButton.getY();
+
+      TextView currentPlayer = (TextView) this.findViewById(R.id.currentPlayer);
+
+       if (currentPlayer.getText().toString().equals("X") && gameOver == false) {
+          this.b.makeMove(xTarget, yTarget, Board.CROSS);
+
+
+          if (WinChecker.check(this.b) == true) {
+             TextView tv = (TextView) this.findViewById(R.id.WinIndicator);
+             tv.setText("WINNER:");
+             gameOver = true;
+          }
+          pressedButton.setText("O");
+          currentPlayer.setText("O");
+       } else if (currentPlayer.getText().toString().equals("O")){
+          this.b.makeMove(xTarget, yTarget, Board.NOUGHT);
+          if (WinChecker.check(this.b) == true) {
+             TextView tv = (TextView) this.findViewById(R.id.WinIndicator);
+             tv.setText("WINNER:");
+             gameOver = true;
+          }
+          pressedButton.setText("X");
+          currentPlayer.setText("X");
+
+       }
+
+       pressedButton.setClickable(false);
+
+
+
    }
 
 }
