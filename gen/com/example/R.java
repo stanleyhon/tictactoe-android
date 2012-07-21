@@ -28,6 +28,7 @@ containing a value of this type.
     }
     public static final class drawable {
         public static final int splash=0x7f020000;
+        public static final int wood=0x7f020001;
     }
     public static final class id {
         public static final int WinIndicator=0x7f050009;
