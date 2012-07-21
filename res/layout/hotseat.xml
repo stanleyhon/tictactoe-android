@@ -150,4 +150,14 @@
             android:paddingRight="25dip"
             />
 
+    <Button
+            android:id="@+id/playAgain"
+            android:layout_height="50dip"
+            android:layout_width="fill_parent"
+            android:text="PLAY AGAIN?"
+            android:enabled="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+
 </RelativeLayout>
